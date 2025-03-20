@@ -1,4 +1,4 @@
-import { notFound, redirect } from "next/navigation";
+import {  redirect } from "next/navigation";
 export default async function ReviewPage({ params }:
     { params: Promise<{ productId: string, reviewId: string }> }) {
     const { productId, reviewId } = await params;
